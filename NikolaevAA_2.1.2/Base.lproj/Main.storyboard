@@ -16,31 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZV-Ba-1GE">
-                                <rect key="frame" x="116" y="115" width="182" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBp-hV-G37">
-                                <rect key="frame" x="116" y="303" width="182" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Idy-AE-XAh">
-                                <rect key="frame" x="116" y="496" width="182" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMM-C6-E1n">
-                                <rect key="frame" x="133" y="724" width="128" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMM-C6-E1n">
+                                <rect key="frame" x="133" y="762" width="139" height="31"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Start"/>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="nfI-1H-fCc">
+                                <rect key="frame" x="116" y="104" width="182" height="516"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZV-Ba-1GE">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </view>
+                                    <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vBp-hV-G37">
+                                        <rect key="frame" x="0.0" y="196" width="182" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Idy-AE-XAh">
+                                        <rect key="frame" x="0.0" y="392" width="182" height="124"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Idy-AE-XAh" firstAttribute="top" secondItem="nfI-1H-fCc" secondAttribute="top" constant="392" id="Kab-cw-ZlD"/>
+                                    <constraint firstItem="vBp-hV-G37" firstAttribute="top" secondItem="nfI-1H-fCc" secondAttribute="top" constant="196" id="VPt-8G-P24"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="nfI-1H-fCc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="KIO-1h-syG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eMM-C6-E1n" secondAttribute="trailing" constant="142" id="dgt-do-QEk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nfI-1H-fCc" secondAttribute="trailing" constant="116" id="fQ5-cM-sot"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eMM-C6-E1n" secondAttribute="bottom" constant="69" id="gbE-UL-i1u"/>
+                            <constraint firstItem="eMM-C6-E1n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="718" id="i3I-ZL-lyn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nfI-1H-fCc" secondAttribute="bottom" constant="242" id="n2j-Do-CML"/>
+                            <constraint firstItem="nfI-1H-fCc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="umi-pw-zpX"/>
+                            <constraint firstItem="eMM-C6-E1n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="xbJ-Sh-f6b"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
